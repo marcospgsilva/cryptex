@@ -14,7 +14,8 @@ defmodule Cryptex.Application do
       # Start the PubSub system
       {Phoenix.PubSub, name: Cryptex.PubSub},
       # Start the Endpoint (http/https)
-      CryptexWeb.Endpoint
+      CryptexWeb.Endpoint,
+      Cryptex.DynamicSupervisor
       # Start a worker by calling: Cryptex.Worker.start_link(arg)
       # {Cryptex.Worker, arg}
     ]

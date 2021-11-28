@@ -26,6 +26,8 @@ config :logger, :console,
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
 
+config :cryptex, Cryptex.Requests, binance_data_api_base_url: "wss://stream.binance.com:9443/ws"
+
 # Import environment specific config. This must remain at the bottom
 # of this file so it overrides the configuration defined above.
 import_config "#{Mix.env()}.exs"
